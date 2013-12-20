@@ -1,0 +1,12 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+
+repositories {
+	maven {
+		url "http://192.168.1.108:8081/nexus/content/repositories/central/"
+	}
+}
+ 
+dependencies {
+	testCompile 'junit:junit:4.+'
+}
