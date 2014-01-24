@@ -4,6 +4,8 @@ import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.TimeUnit;
 
 public class ThreadPool {
 
@@ -31,7 +33,7 @@ public class ThreadPool {
 	
 	public static void main(String[] args) throws InterruptedException
 	{
-		ExecutorService service = Executors.newFixedThreadPool(2);
+		/*ExecutorService service = Executors.newFixedThreadPool(2);
 		TaskA taska = new TaskA();
 		TaskB taskB = new TaskB();
 		Future<?> future = service.submit(taska);
@@ -39,6 +41,23 @@ public class ThreadPool {
 		Thread.sleep(2000);
 		System.out.println(future.isDone());
 		System.out.println(future2.isDone());
-		service.shutdown();
+		service.shutdown();*/
+		SingleThread st = new SingleThread();
+		st.test();
+	}
+	
+	static class SingleThread {
+		public void test() throws InterruptedException {
+			ScheduledExecutorService ses = Executors.newSingleThreadScheduledExecutor();
+			ses.scheduleAtFixedRate(new Runnable() {
+				
+				@Override
+				public void run() {
+					System.out.println("-------------------");
+				}
+			}, 0, 10, TimeUnit.SECONDS);
+			
+			
+		}
 	}
 }
