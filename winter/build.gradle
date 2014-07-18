@@ -2,12 +2,16 @@ apply plugin: 'java'
 apply plugin: 'eclipse'
 
 repositories {
-	maven {
-		url "http://192.168.1.108:8081/nexus/content/repositories/central/"
-	}
+	//maven {
+	//	url "http://192.168.1.108:8081/nexus/content/repositories/central/"
+	//}
 	mavenCentral()
 }
  
 dependencies {
+	compile 'com.thoughtworks.xstream:xstream:1.4.5' 
+	compile 'org.apache.tika:tika-core:1.5'
+    compile 'org.apache.tika:tika-parsers:1.5'
+    compile 'org.antlr:antlr4:4.0'
 	testCompile 'junit:junit:4.11'
 }
