@@ -18,5 +18,7 @@ dependencies {
  	compile 'org.drools:knowledge-api:5.4.0.Final'
  	compile 'org.drools:drools-compiler:5.4.0.Final'
 	
+	compile 'org.apache.poi:poi-ooxml:3.10-FINAL'
+	
 	testCompile 'junit:junit:4.11'
 }
