@@ -13,5 +13,10 @@ dependencies {
 	compile 'org.apache.tika:tika-core:1.5'
     compile 'org.apache.tika:tika-parsers:1.5'
     compile 'org.antlr:antlr4:4.0'
+    
+    compile 'org.drools:drools-core:5.4.0.Final'
+ 	compile 'org.drools:knowledge-api:5.4.0.Final'
+ 	compile 'org.drools:drools-compiler:5.4.0.Final'
+	
 	testCompile 'junit:junit:4.11'
 }
