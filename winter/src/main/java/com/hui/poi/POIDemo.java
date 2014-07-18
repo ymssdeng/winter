@@ -23,10 +23,6 @@ public class POIDemo {
 				"user_management_template.xlsx"));
 
 		//writeDataValidation(wb);
-		
-		DataValidation dataValidation = null;
-		DataValidationConstraint constraint = null;
-		DataValidationHelper validationHelper = null;
 
 		String value = null;
 		for (Row row : wb.getSheetAt(0)) {
