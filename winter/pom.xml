@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project
+    xmlns="http://maven.apache.org/POM/4.0.0"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.hui</groupId>
+  <artifactId>winter</artifactId>
+  <version>1.0.0</version>
+  <packaging>jar</packaging>
+  
+  <name>The way on the Java, dribs and drabs for general principle</name>
+  <url>https://github.com/ymss/winter</url>
+
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>1.7</source>
+          <target>1.7</target>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
+ <dependencies>
+  <dependency>
+   <groupId>com.thoughtworks.xstream</groupId>
+   <artifactId>xstream</artifactId>
+   <version>1.4.5</version>
+  </dependency>
+  <dependency>
+   <groupId>org.apache.tika</groupId>
+   <artifactId>tika-core</artifactId>
+   <version>1.5</version>
+  </dependency>
+  <dependency>
+   <groupId>org.apache.tika</groupId>
+   <artifactId>tika-parsers</artifactId>
+   <version>1.5</version>
+  </dependency>
+  <dependency>
+   <groupId>org.antlr</groupId>
+   <artifactId>antlr4</artifactId>
+   <version>4.0</version>
+  </dependency>
+
+  <!-- drools -->
+  <dependency>
+   <groupId>org.drools</groupId>
+   <artifactId>drools-core</artifactId>
+   <version>5.4.0.Final</version>
+  </dependency>
+  <dependency>
+   <groupId>org.drools</groupId>
+   <artifactId>knowledge-api</artifactId>
+   <version>5.4.0.Final</version>
+  </dependency>
+  <dependency>
+   <groupId>org.drools</groupId>
+   <artifactId>drools-compiler</artifactId>
+   <version>5.4.0.Final</version>
+  </dependency>  
+
+  <dependency>
+   <groupId>org.apache.poi</groupId>
+   <artifactId>poi-ooxml</artifactId>
+   <version>3.10-FINAL</version>
+  </dependency>    
+
+  <dependency>
+   <groupId>junit</groupId>
+   <artifactId>junit</artifactId>
+   <version>4.11</version>
+  </dependency>    
+ </dependencies>
+</project>
